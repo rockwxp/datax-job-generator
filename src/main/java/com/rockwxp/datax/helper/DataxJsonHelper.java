@@ -18,8 +18,8 @@ public class DataxJsonHelper {
     private final JSONObject inputConfig = JSONUtil.parseObj("{\"job\":{\"content\":[{\"reader\":{\"name\":\"mysqlreader\",\"parameter\":{\"column\":[],\"connection\":[{\"jdbcUrl\":[],\"table\":[]}],\"password\":\"\",\"splitPk\":\"\",\"username\":\"\"}},\"writer\":{\"name\":\"hdfswriter\",\"parameter\":{\"column\":[],\"compress\":\"gzip\",\"defaultFS\":\"\",\"fieldDelimiter\":\"\\t\",\"fileName\":\"content\",\"fileType\":\"text\",\"path\":\"${targetdir}\",\"writeMode\":\"truncate\",\"hadoopConfig\":{\n" +
             "         \"dfs.nameservices\": \"mycluster\",\n" +
             "         \"dfs.ha.namenodes.mycluster\": \"nn1,nn2\",\n" +
-            "         \"dfs.namenode.rpc-address.mycluster.nn1\": \"hadoop102:8020\",\n" +
-            "         \"dfs.namenode.rpc-address.mycluster.nn2\": \"hadoop103:8020\",\n" +
+            "         \"dfs.namenode.rpc-address.mycluster.nn1\": \"hadoop101:8020\",\n" +
+            "         \"dfs.namenode.rpc-address.mycluster.nn2\": \"hadoop101:8020\",\n" +
             "         \"dfs.client.failover.proxy.provider.mycluster\": \"org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider\"\n" +
             " },\"nullFormat\":\"\"}}}],\"setting\":{\"speed\":{\"channel\":1}}}}");
     private final JSONObject outputConfig = JSONUtil.parseObj("{\"job\":{\"setting\":{\"speed\":{\"channel\":1}},\"content\":[{\"reader\":{\"name\":\"hdfsreader\",\"parameter\":{\"path\":\"${exportdir}\",\"defaultFS\":\"\",\"column\":[\"*\"],\"fileType\":\"text\",\"encoding\":\"UTF-8\",\"fieldDelimiter\":\"\\t\",\"hadoopConfig\":{\n" +

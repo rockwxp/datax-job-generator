@@ -1,5 +1,6 @@
 package com.rockwxp.datax.beans;
 
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

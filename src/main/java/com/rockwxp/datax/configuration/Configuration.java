@@ -30,7 +30,7 @@ public class Configuration {
         try {
             configuration.load(Files.newBufferedReader(path));
             MYSQL_USER = configuration.getProperty("mysql.username", "root");
-            MYSQL_PASSWORD = configuration.getProperty("mysql.password", "000000");
+            MYSQL_PASSWORD = configuration.getProperty("mysql.password", "hadoop");
             MYSQL_HOST = configuration.getProperty("mysql.host", "hadoop101");
             MYSQL_PORT = configuration.getProperty("mysql.port", "3306");
             MYSQL_DATABASE_IMPORT = configuration.getProperty("mysql.database.import", "financial_lease");

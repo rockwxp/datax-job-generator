@@ -1,6 +1,5 @@
 package com.rockwxp.datax.beans;
 
-
 import java.util.HashMap;
 import java.util.Map;
 
